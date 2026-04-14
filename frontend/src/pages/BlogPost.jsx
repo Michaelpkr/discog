@@ -1,5 +1,4 @@
 import { useParams, Link as RouterLink } from 'react-router-dom'
-import ReactMarkdown from 'react-markdown'
 import {
   Box,
   Button,
@@ -17,21 +16,6 @@ function formatDate(dateStr) {
     day: 'numeric',
     timeZone: 'UTC',
   })
-}
-
-const markdownComponents = {
-  h1: ({ children }) => <Typography variant="h4" fontWeight={600} mt={4} mb={1}>{children}</Typography>,
-  h2: ({ children }) => <Typography variant="h5" fontWeight={600} mt={4} mb={1}>{children}</Typography>,
-  h3: ({ children }) => <Typography variant="h6" fontWeight={600} mt={3} mb={1}>{children}</Typography>,
-  p:  ({ children }) => <Typography variant="body1" mb={3} sx={{ lineHeight: 1.8 }}>{children}</Typography>,
-  li: ({ children }) => <Typography component="li" variant="body1" sx={{ lineHeight: 1.8 }}>{children}</Typography>,
-  ul: ({ children }) => <Box component="ul" sx={{ pl: 3, mb: 2 }}>{children}</Box>,
-  ol: ({ children }) => <Box component="ol" sx={{ pl: 3, mb: 2 }}>{children}</Box>,
-  code: ({ children }) => (
-    <Box component="code" sx={{ bgcolor: 'action.hover', px: 0.75, py: 0.25, borderRadius: 1, fontFamily: 'monospace', fontSize: '0.875em' }}>
-      {children}
-    </Box>
-  ),
 }
 
 export default function BlogPost() {
