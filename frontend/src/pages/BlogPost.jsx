@@ -1,5 +1,6 @@
 import { useParams, Link as RouterLink } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
+import remarkBreaks from 'remark-breaks'
 import {
   Box,
   Button,
@@ -68,7 +69,7 @@ export default function BlogPost() {
       </Typography>
       <Divider sx={{ mb: 4 }} />
 
-      <ReactMarkdown components={markdownComponents}>
+      <ReactMarkdown components={markdownComponents} remarkPlugins={[remarkBreaks]}>
         {post.content}
       </ReactMarkdown>
     </Container>
