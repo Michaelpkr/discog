@@ -1,4 +1,4 @@
-import day1 from '../posts/day-1.md?raw'
+import day1 from '../posts/day-1.js'
 
 const posts = [
   {
