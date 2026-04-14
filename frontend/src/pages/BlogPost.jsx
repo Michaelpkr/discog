@@ -51,10 +51,7 @@ export default function BlogPost() {
         {post.title}
       </Typography>
       <Divider sx={{ mb: 4 }} />
-
-      <ReactMarkdown components={markdownComponents}>
         {post.content}
-      </ReactMarkdown>
     </Container>
   )
 }

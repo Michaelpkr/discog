@@ -1,5 +1,5 @@
 export default function content() {
   return (
-    <p>Hello</p>
+    <p>In progress.</p>
   )
 }
