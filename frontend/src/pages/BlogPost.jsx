@@ -51,7 +51,7 @@ export default function BlogPost() {
         {post.title}
       </Typography>
       <Divider sx={{ mb: 4 }} />
-        {post.content}
+        <post.content />
     </Container>
   )
 }

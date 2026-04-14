@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d12e8909-c4fc-4376-a24c-0f4b0ab720f1" name="Changes" comment="Initial Commit">
-      <change beforePath="$PROJECT_DIR$/frontend/src/posts/day-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/posts/day-1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/settings.local.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/data/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/data/posts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/BlogPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/BlogPost.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/posts/day-1.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/posts/day-1.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,5 +1,41 @@
-export default function content() {
+
+export default function Day1() {
   return (
-    <p>In progress.</p>
+      <div>
+         <h1>I've been working to become a software engineer for almost five years now.</h1>
+         <h2>It's probably time to actually do it.</h2>
+         <p>In 2019, I became an email marketing specialist, and began to learn HTML and CSS. After a few years, and several hundred emails later, I wanted to start learning about interactivity, enter vanilla Javascript.</p>
+         <p>I built several small applications [(you can find them here)](https://michaelpkr.dev), and learned the absolute basics.</p>
+         <p>After Javascript, I learned about the React framework, and pretty much camped out in the frontend for several years. The frontend was safe, the backend was scary. I've stayed away from the backend, until absolutely necessary.</p>
+         <p>Now, it's absolutely necessary.</p>
+         <p>I'm currently on a path at work to become a software engineer, and there are some hard skills that I'm still lacking:</p>
+         <ul>
+            <li>strong backend skills</li>
+            <li>a general working knowledge of databases.</li>
+         </ul>
+         <p>My hope is that by working on a project that I'm interested in, I can have the courage to face the scary backend, and even scarier database.</p>
+         <p>My plan is to be working on this project between now and July 1st (my target date for making the transition to software engineer). Some days will be for learning new concepts, some days will be for writing the actual code. I hope to post here what I've learned, what I plan on implementing, and what I don't understand.</p>
+         <p>Let's talk about the actual project.</p>
+         <h2>Discog.io</h2>
+         <p>I've had this idea for a long time, and haven't acted upon it. Feel free to steal all of my intellectual property. I'm just trying to get a job, man.</p>
+         <h3>Here's the idea . . .</h3>
+         <p>You have currency. Let's call it 30,000 coins. With those coins, you can more buy coins.</p>
+         <p>Don't roll your eyes, these aren't just any coins. These are collectible coins, that represent your favorite music artists. They're Discogs.</p>
+         <p>Each Discog has a picture of your favorite artist, and is inscribed with their most popular song, and their ranking in listenership (by Spotify's standards at least.)</p>
+         <p>With your 30,000 coins, you can purchase Discogs. Spend them all on one artist, or diversify your portfolio. Each day, you can check in, and see what your Discog portfolio value is that day. Did your artist recently tour and pick up a ton of monthly listeners? Did they bomb last night's SNL performance?</p>
+         <p>Each Discog can be purchased on the Marketplace. The Discog cost is equal to that artist's monthly listener count (from Spotify's API). You can search for your favorite artists, or you can go to the Explore tab, and scroll through snippets of randomized artists most prominent songs (you can filter by Discog cost, genre, era, etc.).</p>
+         <p>Here's where it gets wild. There is only one of each Discog.</p>
+         <p>There is one Santana.</p>
+         <p>One Blink 182.</p>
+         <p>One Ray Charles.</p>
+         <p>You are able to trade with users around the world. Your friends in your hometown, or listeners around the world. If you search your favorite artist, and their Discog has already been purchased, you'll see which user has the Discog you want. Trade them a Discog outright, or buy it from them with your currency.</p>
+         <p>Each day you login, you'll be given one Discog. You can either keep it in your portfolio, or redeem it for currency, to buy a Discog of your choosing at a later date.</p>
+         <p>Collect Discogs. Learn about up-and-coming artists. Trade with your friends.</p>
+         <p>That's the idea.</p>
+         <p>If you've made it to this point, you're a trooper.</p>
+         <p>Tomorrow, I hope set up the connection with Spotify, pull in 10 random artists, and display their monthly listener counts on the main page.</p>
+         <p>I'll keep you posted.</p>
+         <p>Michael.</p>
+      </div>
   )
 }

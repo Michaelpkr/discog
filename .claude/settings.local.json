@@ -6,7 +6,23 @@
       "Bash(git push:*)",
       "Bash(npm install:*)",
       "Bash(npm run:*)",
-      "Bash(curl -s http://localhost:5173)"
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(java -version)",
+      "Bash(mvn -v)",
+      "Bash(brew install *)",
+      "Bash(curl -fsSL https://downloads.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz -o /tmp/maven.tar.gz)",
+      "Bash(tar -xzf /tmp/maven.tar.gz -C /usr/local/)",
+      "Bash(ln -sf /usr/local/apache-maven-3.9.9/bin/mvn /usr/local/bin/mvn)",
+      "Bash(curl -fsSL https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz -o /tmp/maven.tar.gz)",
+      "Bash(curl -fsSL \"https://archive.apache.org/dist/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz\" -o /tmp/maven.tar.gz)",
+      "Bash(ln -sf /usr/local/apache-maven-3.9.6/bin/mvn /usr/local/bin/mvn)",
+      "Bash(mkdir -p ~/tools)",
+      "Bash(tar -xzf /tmp/maven.tar.gz -C ~/tools/)",
+      "Bash(~/tools/apache-maven-3.9.6/bin/mvn *)",
+      "Bash(echo '')",
+      "Bash(echo '# Maven')",
+      "Bash(echo 'export PATH=\"$HOME/tools/apache-maven-3.9.6/bin:$PATH\"')",
+      "Bash(command -v nvm)"
     ]
   }
 }
