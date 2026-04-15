@@ -5,7 +5,7 @@ import {
   CardContent,
   CardActionArea,
   Container,
-  TypogDoraphy,
+  Typography,
   Divider,
 } from '@mui/material'
 import posts from '../data/posts'
