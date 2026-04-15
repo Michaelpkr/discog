@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d12e8909-c4fc-4376-a24c-0f4b0ab720f1" name="Changes" comment="Initial Commit">
-      <change beforePath="$PROJECT_DIR$/.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/settings.local.json" afterDir="false" />
+    <list default="true" id="d12e8909-c4fc-4376-a24c-0f4b0ab720f1" name="Changes" comment="Begin Spotify Integration">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/client/SpotifyAuthClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/client/SpotifyTokenResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/config/SpotifyProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/service/SpotifyTokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/posts/day-2.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/data/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/data/posts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/BlogPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/BlogPost.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/posts/day-1.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/posts/day-1.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Blog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Blog.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/posts/day-1.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,15 +76,26 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.BackendApplication.executor": "Debug",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/michaelparker/IdeaProjects/discog",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/Users/michaelparker/IdeaProjects/discog/src/Main.java",
     "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -108,13 +123,6 @@
         <item itemvalue="Spring Boot.BackendApplication" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.240" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -171,6 +179,9 @@
   <component name="TerminalProjectNonSharedOptionsProvider">
     <option name="startingDirectory" value="$PROJECT_DIR$" />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="UnknownFeatures">
     <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
     <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-core" />
@@ -211,7 +222,8 @@
       <path value="$PROJECT_DIR$/backend" />
     </ignored-roots>
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Begin Spotify Integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Begin Spotify Integration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
