@@ -17,7 +17,7 @@ import java.util.List;
 public class ArtistController {
     private final SpotifyService spotifyService;
 
-    @CrossOrigin(origins = "http://localhost:5173")
+    @CrossOrigin(origins = {"http://localhost:5173", "https://ario-three.vercel.app"})
     @GetMapping("/obscure")
     List<SpotifyArtist> obscureArtists(@RequestParam String query) {
        return spotifyService.getObscureArtists(query);

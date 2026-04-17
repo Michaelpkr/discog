@@ -18,7 +18,7 @@ export default function Discover() {
 
     async function getArtists(genre) {
         setLoading(true)
-        const response = await fetch(`http://localhost:8080/api/artists/obscure?query=${genre}`)
+        const response = await fetch(`https://discog-production.up.railway.app/api/artists/obscure?query=${genre}`)
         const data = await response.json()
         setArtists(data)
         setLoading(false)

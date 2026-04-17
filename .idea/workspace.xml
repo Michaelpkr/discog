@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d12e8909-c4fc-4376-a24c-0f4b0ab720f1" name="Changes" comment="Begin Spotify Integration">
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Discover.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/client/SpotifyApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/client/SpotifyApiClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/controller/ArtistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/controller/ArtistController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/service/SpotifyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/service/SpotifyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
