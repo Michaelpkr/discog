@@ -17,8 +17,9 @@ public class SpotifyService {
     public List<SpotifyArtist> getObscureArtists(String query)
     {
         String token = spotifyTokenService.getAccessToken();
+        int offset = new java.util.Random().nextInt(200);
         SpotifySearchResponse response = spotifyApiClient.search("Bearer " +
-                token, query, "artist");
+                token, query, "artist", offset);
 
         return response.getArtists().getArtists().stream()
                 .map(artist -> spotifyApiClient.getArtist("Bearer " + token, artist.getId()))

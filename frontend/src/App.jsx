@@ -9,6 +9,7 @@ import {
 } from '@mui/material'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
+import Discover from './pages/Discover'
 
 function Nav() {
   const { pathname } = useLocation()
@@ -32,6 +33,11 @@ function Nav() {
         >
           Blog
         </Button>
+          <Button component={RouterLink} to="/discover"
+                  color={pathname.startsWith('/discover') ? 'primary' :
+                      'inherit'}>
+              Discover
+          </Button>
       </Toolbar>
     </AppBar>
   )
@@ -46,6 +52,7 @@ function Home() {
       <Typography variant="body1" color="text.secondary" mt={2}>
         Collect and trade your favorite artists.
       </Typography>
+      <Discover/>
     </Box>
   )
 }
@@ -59,6 +66,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogPost />} />
+        <Route path="/discover" element={<Discover />} />
       </Routes>
     </>
   )

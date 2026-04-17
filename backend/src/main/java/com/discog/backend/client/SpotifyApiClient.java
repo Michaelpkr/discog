@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface SpotifyApiClient {
 
     @GetMapping(value = "/v1/search")
-    public SpotifySearchResponse search (@RequestHeader("Authorization") String bearerToken, @RequestParam("q") String query, @RequestParam("type") String type);
+    public SpotifySearchResponse search (@RequestHeader("Authorization") String bearerToken, @RequestParam("q") String query, @RequestParam("type") String type, @RequestParam("offset") int offset);
 
     @GetMapping(value = "/v1/search")
     String searchRaw(@RequestHeader("Authorization") String bearerToken, @RequestParam("q") String query, @RequestParam("type") String type);
