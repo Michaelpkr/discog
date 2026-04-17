@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d12e8909-c4fc-4376-a24c-0f4b0ab720f1" name="Changes" comment="Begin Spotify Integration">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/client/Followers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/client/SpotifyApiClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/client/SpotifySearchResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/client/ArtistPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/client/SpotifyImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/controller/ArtistController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/service/SpotifyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/service/SpotifyTokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/service/SpotifyTokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/BackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/BackendApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/client/SpotifyApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/client/SpotifyApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/client/SpotifyArtist.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/client/SpotifyArtist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/client/SpotifyAuthClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/client/SpotifyAuthClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/client/SpotifySearchResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/discog/backend/client/SpotifySearchResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +63,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="3C8uoD8FhFp7lyiQmuMC9qu72YW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -98,11 +107,16 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.discog.backend.controller" />
       <recent name="com.discog.backend.client" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="SPOTIFY_CLIENT_ID" value="bd30f5dac831440b95b293350b98d54e" />
+        <env name="SPOTIFY_CLIENT_SECRET" value="be198acd0ad7446ba7058d372f9731f8" />
+      </envs>
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
       <module name="backend" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.discog.backend.BackendApplication" />
