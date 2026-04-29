@@ -21,7 +21,7 @@ public class SpotifyService {
         SpotifySearchResponse response = spotifyApiClient.search("Bearer " +
                 token, query, "artist", offset);
 
-        return response.getArtists().getArtists().stream()
+        return response.getArtists().getItems().stream()
                 .map(artist -> spotifyApiClient.getArtist("Bearer " + token, artist.getId()))
                 .filter(artist -> artist.getImages() != null && !artist.getImages().isEmpty())
                 .limit(10)

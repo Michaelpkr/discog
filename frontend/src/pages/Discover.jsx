@@ -7,6 +7,7 @@ import {
     CardActionArea,
     Container,
     Typography,
+    TextField,
     Divider,
 } from '@mui/material'
 import {useState} from "react";
@@ -15,10 +16,19 @@ export default function Discover() {
 
     const [artists, setArtists] = useState([])
     const [loading, setLoading] = useState(false)
+    const [artistQuery, setArtistQuery] = useState("")
 
-    async function getArtists(genre) {
+    async function getArtists() {
         setLoading(true)
-        const response = await fetch(`https://discog-production.up.railway.app/api/artists/obscure?query=${genre}`)
+        const response = await fetch(`https://discog-production.up.railway.app/api/artists/obscure?query=${artistQuery}`)
+        const data = await response.json()
+        setArtists(data)
+        setLoading(false)
+    }
+
+    async function getIndividualArtist() {
+        setLoading(true)
+        const response = await fetch(`https://discog-production.up.railway.app/api/artists/obscure?query=${artistQuery}`)
         const data = await response.json()
         setArtists(data)
         setLoading(false)
@@ -31,19 +41,27 @@ export default function Discover() {
             </Typography>
             <Divider sx={{ mb: 4 }} />
 
-            <Box sx={{ display: 'flex', flexWrap: 'wrap', flexDirection: 'row', gap: 2 }}>
-                <Button variant="outlined" onClick={() => getArtists('jazz')}>Jazz</Button>
-                <Button variant="outlined" onClick={() => getArtists('rock')}>Rock</Button>
-                <Button variant="outlined" onClick={() => getArtists('hip-hop')}>Hip-Hop</Button>
-                <Button variant="outlined" onClick={() => getArtists('classical')}>Classical</Button>
-                <Button variant="outlined" onClick={() => getArtists('electronic')}>Electronic</Button>
-                <Button variant="outlined" onClick={() => getArtists('r&b')}>R&B</Button>
-                <Button variant="outlined" onClick={() => getArtists('country')}>Country</Button>
-                <Button variant="outlined" onClick={() => getArtists('metal')}>Metal</Button>
-                <Button variant="outlined" onClick={() => getArtists('pop')}>Pop</Button>
-                <Button variant="outlined" onClick={() => getArtists('reggae')}>Reggae</Button>
-                <Button variant="outlined" onClick={() => getArtists('folk')}>Folk</Button>
-                <Button variant="outlined" onClick={() => getArtists('blues')}>Blues</Button>
+            {/*<Box sx={{ display: 'flex', flexWrap: 'wrap', flexDirection: 'row', gap: 2 }}>*/}
+            {/*    <Button variant="outlined" onClick={() => getArtists('jazz')}>Jazz</Button>*/}
+            {/*    <Button variant="outlined" onClick={() => getArtists('rock')}>Rock</Button>*/}
+            {/*    <Button variant="outlined" onClick={() => getArtists('hip-hop')}>Hip-Hop</Button>*/}
+            {/*    <Button variant="outlined" onClick={() => getArtists('classical')}>Classical</Button>*/}
+            {/*    <Button variant="outlined" onClick={() => getArtists('electronic')}>Electronic</Button>*/}
+            {/*    <Button variant="outlined" onClick={() => getArtists('r&b')}>R&B</Button>*/}
+            {/*    <Button variant="outlined" onClick={() => getArtists('country')}>Country</Button>*/}
+            {/*    <Button variant="outlined" onClick={() => getArtists('metal')}>Metal</Button>*/}
+            {/*    <Button variant="outlined" onClick={() => getArtists('pop')}>Pop</Button>*/}
+            {/*    <Button variant="outlined" onClick={() => getArtists('reggae')}>Reggae</Button>*/}
+            {/*    <Button variant="outlined" onClick={() => getArtists('folk')}>Folk</Button>*/}
+            {/*    <Button variant="outlined" onClick={() => getArtists('blues')}>Blues</Button>*/}
+            {/*</Box>*/}
+
+            <Box>
+                <TextField
+                onChange={(e) => setArtistQuery(e.target.value)}
+                placeholder="Search for a particular artist"
+                />
+                <Button onClick={getIndividualArtist}>Search</Button>
             </Box>
 
             {loading && <Typography sx={{ mt: 3 }}>Loading...</Typography>}

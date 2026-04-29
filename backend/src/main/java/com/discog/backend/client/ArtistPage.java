@@ -8,5 +8,5 @@ import java.util.List;
 @Data
 public class ArtistPage {
     @JsonProperty("items")
-    private List<SpotifyArtist> artists;
+    private List<SpotifyArtist> items;
 }

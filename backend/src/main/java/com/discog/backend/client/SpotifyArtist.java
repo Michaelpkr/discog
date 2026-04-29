@@ -15,8 +15,6 @@ public class SpotifyArtist {
     String name;
     @JsonProperty("followers")
     ArtistFollowers followers;
-    @JsonProperty("popularity")
-    Integer popularity;
     @JsonProperty("id")
     String id;
     @JsonProperty("images")

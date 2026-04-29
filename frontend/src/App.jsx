@@ -52,7 +52,6 @@ function Home() {
       <Typography variant="body1" color="text.secondary" mt={2}>
         Collect and trade your favorite artists.
       </Typography>
-      <Discover/>
     </Box>
   )
 }
