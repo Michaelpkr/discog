@@ -29,7 +29,7 @@ const posts = [
     id: 4,
     title: "Day 4",
     date: "2026-04-28",
-    summary: "Restarting with intention.",
+    summary: "Let's back up.",
     content: day4,
   },
 ]
