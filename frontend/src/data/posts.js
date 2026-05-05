@@ -2,6 +2,7 @@ import day1 from '../posts/day-1.jsx'
 import day2 from '../posts/day-2.jsx'
 import day3 from '../posts/day-3.jsx'
 import day4 from '../posts/day-4.jsx'
+import day5 from '../posts/day-5.jsx'
 
 const posts = [
   {
@@ -31,6 +32,13 @@ const posts = [
     date: "2026-04-28",
     summary: "Let's back up.",
     content: day4,
+  },
+  {
+    id: 5,
+    title: "Day 5",
+    date: "2026-05-04",
+    summary: "Continuing through the Controller and into the frontend.",
+    content: day5,
   },
 ]
 
