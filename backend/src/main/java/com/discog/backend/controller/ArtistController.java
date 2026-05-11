@@ -22,4 +22,10 @@ public class ArtistController {
     List<SpotifyArtist> obscureArtists(@RequestParam String query) {
        return spotifyService.getObscureArtists(query);
     }
+
+    @CrossOrigin(origins = {"http://localhost:5173", "https://ario-three.vercel.app"})
+    @GetMapping("/artist")
+    SpotifyArtist singleArtist(@RequestParam String query) {
+        return spotifyService.getIndividualArtist(query);
+    }
 }

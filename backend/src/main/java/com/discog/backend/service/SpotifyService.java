@@ -27,4 +27,15 @@ public class SpotifyService {
                 .limit(10)
                 .toList();
     }
+
+    public SpotifyArtist getIndividualArtist(String query)
+    {
+        String token = spotifyTokenService.getAccessToken();
+        SpotifySearchResponse response = spotifyApiClient.search("Bearer " +
+                token, query, "artist", 0);
+
+        return (SpotifyArtist) response.getArtists().getItems().stream()
+                .map(artist -> spotifyApiClient.getArtist("Bearer " + token, artist.getId()))
+                .findFirst().orElse(null);
+    }
 }
