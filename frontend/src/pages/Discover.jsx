@@ -17,14 +17,16 @@ export default function Discover() {
     const [artists, setArtists] = useState([])
     const [loading, setLoading] = useState(false)
     const [artistQuery, setArtistQuery] = useState("")
+    const [randomArtistQuery, setRandomArtistQuery] = useState("")
 
-    // async function getArtists() {
-    //     setLoading(true)
-    //     const response = await fetch(`https://discog-production.up.railway.app/api/artists/obscure?query=${artistQuery}`)
-    //     const data = await response.json()
-    //     setArtists(data)
-    //     setLoading(false)
-    // }
+    async function getArtists() {
+        setLoading(true)
+        const response = await fetch(`https://discog-production.up.railway.app/api/artists/obscure?query=${randomArtistQuery}`)
+        const data = await response.json()
+        setArtists(data)
+        setLoading(false)
+        setArtistQuery("")
+    }
 
     async function getIndividualArtist() {
         setLoading(true)
@@ -32,6 +34,7 @@ export default function Discover() {
         const data = await response.json()
         setArtists([data])
         setLoading(false)
+        setArtistQuery("")
     }
 
     return (
@@ -44,9 +47,25 @@ export default function Discover() {
             <Box>
                 <TextField
                 onChange={(e) => setArtistQuery(e.target.value)}
-                placeholder="Search for a particular artist"
+                value={artistQuery}
+                placeholder="Search for an individual artist"
+                variant="outlined"
+                fullWidth={true}
                 />
                 <Button onClick={getIndividualArtist}>Search</Button>
+            </Box>
+
+            <Divider sx={{ m: 4 }} />
+
+            <Box>
+                <TextField
+                    onChange={(e) => setRandomArtistQuery(e.target.value)}
+                    value={randomArtistQuery}
+                    placeholder="Get Random Artists By Genre"
+                    variant="outlined"
+                    fullWidth={true}
+                />
+                <Button onClick={getArtists}>Search</Button>
             </Box>
 
             {loading && <Typography sx={{ mt: 3 }}>Loading...</Typography>}
@@ -54,12 +73,12 @@ export default function Discover() {
             <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 3, mt: 3 }}>
                 {artists.map((artist) => (
                     <Card key={artist.id} sx={{ width: 160 }}>
-                        <a href={artist.externalUrls?.spotify} target="_blank" rel="noreferrer" style={{ display: 'block', cursor: 'pointer' }}>
+                        <a href={artist.external_urls.spotify} target="_blank" rel="noreferrer" style={{ display: 'block', cursor: 'pointer' }}>
                             <img alt={artist.name} src={artist.images[0].url} width="160" style={{ display: 'block' }} />
-                        </a>
                         <CardContent>
                             <Typography variant="h6" fontSize={14}>{artist.name}</Typography>
                         </CardContent>
+                        </a>
                     </Card>
                 ))}
             </Box>
